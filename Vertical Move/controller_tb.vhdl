@@ -24,7 +24,7 @@ architecture tb of controller_tb is
     signal final_result : std_logic_vector (column_in_cb-1 downto 0);
     signal o_val       : std_logic;
 
-    constant TbPeriod : time := 20 ns; -- EDIT Put right period here
+    constant TbPeriod : time := 10 ns; -- EDIT Put right period here
     signal TbClock : std_logic := '0';
     signal TbSimEnded : std_logic := '0';
 
