@@ -55,7 +55,7 @@ begin
         wait for 10 ns;
 
         -- EDIT Add stimuli here
-        wait for 0.63 ms ;
+        wait for 0.32 ms ;
 
         -- Stop the clock and hence terminate the simulation
         TbSimEnded <= '1';
