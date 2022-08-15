@@ -43,4 +43,4 @@ In each Design file there is a script to compile all the components automaticall
   https://arxiv.org/abs/1612.07119
   
 4. Design and Optimization of FeFET-based Crossbars for Binary Convolution Neural Networks
-  https://ieeexplore.ieee.org/document/8342199
+https://ieeexplore.ieee.org/document/8342199
