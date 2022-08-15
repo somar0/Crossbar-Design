@@ -17,9 +17,9 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 ### cloning repository
 
       $ gh repo clone somar0/Crossbar-Design
-      $ cd SM
+      $ cd Strided Move
       or
-      $ cd VM
+      $ cd Vertical Move
 
 ### compiling VHDL code and looking on wave diagrams in GTKWave
 
