@@ -9,11 +9,12 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ## Quick Instruction
 
-## To use in VIVADO Tool
+## To use in VIVADO 
       
-      add the VHDL files to the VIVADO as source files exept for controller_tb.vhdl
-      this file should be added as a simulation file
-
+      Add the controller_tb.vhdl file as a simulation file
+      Add the constraint.xdc file as a constraint file
+      Add all the VHDL files to the VIVADO as source files 
+      
 ### cloning repository
 
       $ gh repo clone somar0/Crossbar-Design
