@@ -11,8 +11,10 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ### cloning repository
 
-      $ git clone https://github.com/bnna-project/bnna.git  
-      $ cd bnna  
+      $ gh repo clone somar0/Crossbar-Design
+      $ cd SM
+      or
+      $ cd VM
 
 ### compiling VHDL code and looking on wave diagrams in GTKWave
 
@@ -22,22 +24,12 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       $ ghdl -r test_file --vcd=testbench.vcd  #VCD-Dump  
       $ gtkwave testbench.vcd                  #Start GTKWave  
 
-Also you can compile and look on wave diagrams in GTKWave with command  
-  
-      $ bash script.sh test_file.vhdl test_file_testbench.vhdl  
- 
-Last file must be **testbench** !!! 
-
 ### auto compiling the project
-In the compile folder is a script to compile all the components automatically. You can use it like this:
+In each Design file there is a script to compile all the components automatically. You can use it like this:
 
-      $ cd compile
-      $ bash auto_compile.sh
-
-After this you just have to compile the test benches you want to use. For example like this (you should still be in the compile folder):
-
-      $ bash script.sh ../BNNA/tb_presentation.vhdl
-
+      $ sh compile_sm.sh
+      $ sh compile_vm.sh
+      
 ## References
 
 1. FP-BNN:  Binarized  neural  network  on  FPGA  
