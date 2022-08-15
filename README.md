@@ -5,6 +5,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 * **GHDL**
 * **GTKWave**
 * **VHDL**
+* **VIVADO**
 
 ## Quick Instruction
 
