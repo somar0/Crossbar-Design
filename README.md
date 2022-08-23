@@ -9,17 +9,19 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ## Quick Instruction
 
-### To use in VIVADO 
+### To simulate in VIVADO (Execution Time) 
       
 * Add the controller_tb.vhdl file as a simulation file
 * Add the constraint.xdc file as a constraint file
 * Add all the VHDL files to the VIVADO as source files
 * Start Simulation
 
-* To check the results for energy and register area: all the BUSs and the ROMs and the simulation file
-* controller_tb.vhdl should be disabled in VIVADO and their call in Controller.vhdl component should
-* also been disabled (rermoved or commented)
-* But don't forget the constraints file
+### To check the Energy and register area (Luts and flip flops) in VIVADO 
+
+# The same for Simulation but:
+
+* All the BUSs and ROMs and the simulation file controller_tb.vhdl should be disabled and
+* Their calls in Controller.vhdl component should also been disabled (rermoved or commented)
       
 ### Cloning repository
 
