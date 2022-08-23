@@ -51,7 +51,10 @@ The same for Simulation but:
       
       To check the correctness of the Results.
       The values for the input, weights, and thresholds matrices are here generated and stored in the files;
-      inputs.txt, weights.txt and threshold.txt, respectively. the final results are stored in the file activations.txt
+      inputs.txt, weights.txt and threshold.txt, respectively.
+      The generated values are the same every time so we can compare the results.
+      They can be changed through the Python script but then the ROMs value should be modified with the new values 
+      The final results are stored in the file activations.txt
       
 ## P.S.:
 
