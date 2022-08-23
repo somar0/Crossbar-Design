@@ -42,7 +42,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ## Design Model:
 
-### pkg.vhdl
+* pkg.vhdl
       Configuration component where we define the input, weights and threshold matrices's sizes 
       and where we change the configurations; (m, n) the number of (columns, XNORs) in the the crossbar array
 
