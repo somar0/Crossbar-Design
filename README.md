@@ -117,7 +117,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       
 ## P.S.:
 
-      The inputs matrix has been transposed so the column became rwos and the rows became column,
+      The inputs matrix has been transposed so the columns became rwos and the rows became columns,
       so we can deal with its columns in VHDL on VIVADO  
 
 
