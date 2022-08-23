@@ -33,7 +33,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ### auto compiling the project
 
-In each design file there is a script to compile all the components automatically. You can use it like this:
+*In each design file there is a script to compile all the components automatically. You can use it like this:
 
       $ sh compile_sm.sh
       or
