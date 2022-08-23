@@ -47,45 +47,58 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       Configuration component where we define the input, weights and threshold matrices's sizes 
       and where we change the configurations; (m, n) the number of (columns, XNORs) in the the crossbar array
 
-### controller.vhdl
+* controller.vhdl
+      
       Controller to control the data flow between the components
 
-### weights_rom.vhdl & data_rom.vhdl & threshold_rom.vhdl
+* weights_rom.vhdl & data_rom.vhdl & threshold_rom.vhdl
+      
       ROMs to store the three matrices's values
 
-### weights_bus.vhdl & data_bus.vhdl & threshold_bus.vhdl
+* weights_bus.vhdl & data_bus.vhdl & threshold_bus.vhdl
+      
       BUSs to control which rows are bieng read from the three ROMs
 
-### SM.vhdl & VM.vhdl
+* SM.vhdl & VM.vhdl
+      
       Components to differentiate between strided move and vertical move 
 
-### CB.vhdl
+* CB.vhdl
+      
       Crossbar component which has the columns and the interface circuit.
       Accumulator and comparator components are also in CB components and not in the interface circuit because 
       results in accumulator and comparator need to be stored longer than in XNORs and popcount.
 
-### column.vhdl
+* column.vhdl
+      
       Column to calculate the multiplication between weights and inputs through the XNORs gates
 
 ### cb_xnor.vhdl 
+      
       XNOR gate that takes two bits as inputs
 
-### ic.vhdl
+* ic.vhdl
+      
       Interface circuit components which has the popcount
 
-### popcount.vhdl
+* popcount.vhdl
+      
       Popcount to count how many ones in the resulting vector from XNOR gates, it has many adders and flip flops components
 
-### cb_adder.vhdl
+* cb_adder.vhdl
+      
       Adder To add two vectors of a given size through generic
 
-### cb_dff.vhdl
+* cb_dff.vhdl
+      
       D-flip flop to register a vector of a given size through generic
 
-### acc.vhdl
+* acc.vhdl
+      
       Accumulator to accumulate the popcount results (partial sums)
 
-### comparator.vhdl
+* comparator.vhdl
+      
       Comparator to compare the final result of the accumulator with the appropriate threshold value 
 
 
