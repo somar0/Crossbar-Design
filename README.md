@@ -107,3 +107,16 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 * controller_tb.vhdl
 
       Simulation file where we can control how long will the design run 
+      
+## Python file:
+
+      where are the values for the input, weights, and thresholds matrices are generated and stored in the files;
+      inputs.txt, weights.txt and threshold.txt respectively.
+      The final results are stored in the file activations.txt
+      
+## P.S.:
+
+      The inputs matrix has been transposed so the column became rwos and the rows became column,
+      so we can deal with its columns in VHDL on VIVADO  
+
+
