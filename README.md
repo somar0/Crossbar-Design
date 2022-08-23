@@ -73,7 +73,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       
       Column to calculate the multiplication between weights and inputs through the XNORs gates
 
-### cb_xnor.vhdl 
+* cb_xnor.vhdl 
       
       XNOR gate that takes two bits as inputs
 
