@@ -58,10 +58,10 @@ The same for Simulation but:
       
 ## P.S.:
 
-      The input matrix has been in the Python script transposed after generating its values
+      The input matrix has been through the Python script transposed after generating its values
       so the columns became rwos and the rows became columns in the inputs.txt file,
       so we could write them as they are in the data_rom.vhdl 
-      to deal with its columns as rows (std_logic_vector) in VHDL  
+      to deal with its original columns as rows (std_logic_vector) in VHDL  
 
 ## System Model:
 
