@@ -57,7 +57,7 @@ The same for Simulation but:
 ## P.S.:
 
       The inputs matrix has been transposed so the columns became rwos and the rows became columns,
-      so we can deal with its columns in VHDL on VIVADO  
+      so we can deal with its columns as rows (vectors) in VHDL on VIVADO  
 
 ## System Model:
 
