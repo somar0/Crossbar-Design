@@ -18,7 +18,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ### To check the Energy and register area (Luts and flip flops) in VIVADO 
 
-## The same for Simulation but:
+*The same for Simulation but:
 
 * All the BUSs and ROMs and the simulation file controller_tb.vhdl should be disabled and
 * Their calls in Controller.vhdl component should also been disabled (rermoved or commented)
