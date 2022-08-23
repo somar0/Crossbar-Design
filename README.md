@@ -40,7 +40,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       $ sh compile_vm.sh
 
 
-## Design Model:
+## System Model:
 
 * pkg.vhdl
 
