@@ -11,9 +11,9 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ### To simulate in VIVADO (Execution Time) 
       
-* Add the controller_tb.vhdl file as a simulation file
-* Add the constraint.xdc file as a constraint file
-* Add all the VHDL files to the VIVADO as source files
+* Add the controller_tb.vhdl file as a simulation source
+* Add the constraint.xdc file as a constraint
+* Add all the other VHDL files to the VIVADO as design source
 * Start Simulation
 
 ### To check the Energy and register area (Luts and flip flops) in VIVADO 
