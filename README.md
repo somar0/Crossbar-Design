@@ -11,11 +11,17 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 ### To use in VIVADO 
       
-      Add the controller_tb.vhdl file as a simulation file
-      Add the constraint.xdc file as a constraint file
-      Add all the VHDL files to the VIVADO as source files 
+* Add the controller_tb.vhdl file as a simulation file
+* Add the constraint.xdc file as a constraint file
+* Add all the VHDL files to the VIVADO as source files
+* Start Simulation
+
+* To check the results for energy and register area: all the BUSs and the ROMs and the simulation file
+* controller_tb.vhdl should be disabled in VIVADO and their call in Controller.vhdl component should
+* also been disabled (rermoved or commented)
+* But don't forget the constraints file
       
-### cloning repository
+### Cloning repository
 
       $ git clone https://github.com/somar0/Crossbar-Design.git
       $ cd Crossbar-Design
@@ -23,7 +29,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       or
       $ cd Vertical Move
 
-### compiling VHDL code and looking on wave diagrams in GTKWave
+### Compiling VHDL code and looking on wave diagrams in GTKWave
 
       $ ghdl -s test_file.vhdl                 #Syntax Check  
       $ ghdl -a test_file.vhdl                 #Analyse  
@@ -31,7 +37,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       $ ghdl -r test_file --vcd=testbench.vcd  #VCD-Dump  
       $ gtkwave testbench.vcd                  #Start GTKWave  
 
-### auto compiling the project
+### Auto compiling the project
 
 * In each design file there is a script to compile all the components automatically. You can use it like this:
 
@@ -117,7 +123,7 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       
 ## P.S.:
 
-      The inputs matrix has been transposed so the columns became rwos and the rows became columns,
-      so we can deal with its columns in VHDL on VIVADO  
+* The inputs matrix has been transposed so the columns became rwos and the rows became columns,
+  so we can deal with its columns in VHDL on VIVADO  
 
 
