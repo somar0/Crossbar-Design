@@ -61,7 +61,9 @@ The same for Simulation but:
       The input matrix has been through the Python script transposed after generating its values
       so the columns became rwos and the rows became columns in the inputs.txt file,
       so we could write them as they are in the data_rom.vhdl 
-      to deal with its original columns as rows (std_logic_vector) in VHDL  
+      to deal with its original columns as rows (std_logic_vector) in VHDL.
+      
+      When changing the configuration in pkg.vhdl, we need to modify the time in controller_tb.vhdl.
 
 ## System Model:
 
