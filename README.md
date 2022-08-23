@@ -39,7 +39,6 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       or
       $ sh compile_vm.sh
 
-################################################################################################################
 
 ## Design Model:
 
