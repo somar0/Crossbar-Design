@@ -65,10 +65,9 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 
 * CB.vhdl
       
-      Crossbar component which has the columns and the interface circuit.
-      Accumulator and comparator components are also in CB components and not in the interface circuit because 
-      results in accumulator and comparator need to be stored longer than in XNORs and popcount.
-
+      Crossbar component which has the columns and the interface circuit
+      Accumulator and comparator components are also in CB components
+      
 * column.vhdl
       
       Column to calculate the multiplication between weights and inputs through the XNORs gates
@@ -80,10 +79,13 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 * ic.vhdl
       
       Interface circuit components which has the popcount
+      Accumulator and comparator aren't in the interface circuit because results in accumulator 
+      and comparator need to be stored longer than in XNORs and popcount.
 
 * popcount.vhdl
       
-      Popcount to count how many ones in the resulting vector from XNOR gates, it has many adders and flip flops components
+      Popcount to count how many ones in the resulting vector from XNOR gates.
+      It has many adders and flip flops components
 
 * cb_adder.vhdl
       
