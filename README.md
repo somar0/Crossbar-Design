@@ -47,6 +47,17 @@ The same for Simulation but:
       or
       $ sh compile_vm.sh
 
+## Python file:
+      
+      To check the correctness of the Results.
+      
+      The values for the input, weights, and thresholds matrices are here generated and stored in the files;
+      inputs.txt, weights.txt and threshold.txt, respectively. the final results are stored in the file activations.txt
+      
+## P.S.:
+
+      The inputs matrix has been transposed so the columns became rwos and the rows became columns,
+      so we can deal with its columns in VHDL on VIVADO  
 
 ## System Model:
 
@@ -116,16 +127,5 @@ The same for Simulation but:
 
       Simulation file where we can control how long will the design run 
       
-## Python file:
-      
-      To check the correctness of the Results.
-      
-      The values for the input, weights, and thresholds matrices are here generated and stored in the files;
-      inputs.txt, weights.txt and threshold.txt, respectively. the final results are stored in the file activations.txt
-      
-## P.S.:
-
-      The inputs matrix has been transposed so the columns became rwos and the rows became columns,
-      so we can deal with its columns in VHDL on VIVADO  
 
 
