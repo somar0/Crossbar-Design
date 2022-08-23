@@ -43,12 +43,11 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
 ## Design Model:
 
 ### pkg.vhdl
-
-      the configuration component where we define the input, weights and threshold matrices's sizes 
+      Configuration component where we define the input, weights and threshold matrices's sizes 
       and where we change the configurations; (m, n) the number of (columns, XNORs) in the the crossbar array
 
 ### controller.vhdl
-      to control the data flow between the components
+      Controller to control the data flow between the components
 
 ### weights_rom.vhdl & data_rom.vhdl & threshold_rom.vhdl
       ROMs to store the three matrices's values
@@ -60,33 +59,33 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       Components to differentiate between strided move and vertical move 
 
 ### CB.vhdl
-      crossbar component which has the columns and the interface circuit.
-      accumulator and comparator components are also in CB components and not in the interface circuit because 
+      Crossbar component which has the columns and the interface circuit.
+      Accumulator and comparator components are also in CB components and not in the interface circuit because 
       results in accumulator and comparator need to be stored longer than in XNORs and popcount.
 
 ### column.vhdl
-      to calculate the multiplication through the XNORs gates
+      Column to calculate the multiplication between weights and inputs through the XNORs gates
 
 ### cb_xnor.vhdl 
       XNOR gate that takes two bits as inputs
 
 ### ic.vhdl
-      interface circuit components which has the popcount
+      Interface circuit components which has the popcount
 
 ### popcount.vhdl
-      to count how many ones in the resulting vector from XNOR gates, it has many adders and flip flops components
+      Popcount to count how many ones in the resulting vector from XNOR gates, it has many adders and flip flops components
 
 ### cb_adder.vhdl
-      to add two vectors of a given size through generic
+      Adder To add two vectors of a given size through generic
 
 ### cb_dff.vhdl
-      to register a vector of a given size through generic
+      D-flip flop to register a vector of a given size through generic
 
 ### acc.vhdl
-      accumulator to accumulate the popcount results (partial sums)
+      Accumulator to accumulate the popcount results (partial sums)
 
 ### comparator.vhdl
-      comparator to compare the final result of the accumulator with the appropriate threshold value 
+      Comparator to compare the final result of the accumulator with the appropriate threshold value 
 
 
 
