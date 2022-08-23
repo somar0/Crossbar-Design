@@ -58,8 +58,10 @@ The same for Simulation but:
       
 ## P.S.:
 
-      The inputs matrix has been transposed so the columns became rwos and the rows became columns,
-      so we can deal with its columns as rows (vectors) in VHDL on VIVADO  
+      The inputs matrix has been in the Python script transposed after generating its values
+      so the columns became rwos and the rows became columns in the inputs.txt file,
+      so we could write them as they are in the data_rom.vhdl 
+      to deal with its columns as rows (std_logic_vector) in VHDL  
 
 ## System Model:
 
