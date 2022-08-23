@@ -50,7 +50,6 @@ The same for Simulation but:
 ## Python file:
       
       To check the correctness of the Results.
-      
       The values for the input, weights, and thresholds matrices are here generated and stored in the files;
       inputs.txt, weights.txt and threshold.txt, respectively. the final results are stored in the file activations.txt
       
