@@ -101,5 +101,6 @@ Design and Evaluation of Accelerator Organizations for Binarzed Neural Networks
       
       Comparator to compare the final result of the accumulator with the appropriate threshold value 
 
+* controller_tb.vhdl
 
-
+      Simulation file where we can control how long will the design run 
