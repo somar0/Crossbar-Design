@@ -54,7 +54,9 @@ The same for Simulation but:
       inputs.txt, weights.txt and threshold.txt, respectively.
       The generated values are the same every time so we can compare the results.
       They can be changed through the Python script but then the ROMs value should be modified with the new values 
-      The final results are stored in the file activations.txt
+      The final results from python script are stored in the file activations.txt in binary
+      The results are converted from binary to hexadecimal (not through the python script) in file activations_hexadecimal.txt
+      to easialy compare the results with the simulation results  
       
 ## P.S.:
 
